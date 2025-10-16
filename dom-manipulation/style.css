@@ -1,0 +1,104 @@
+ 
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;   
+ }
+
+
+ 
+ 
+ 
+.card-container {
+    background-color: #c8a8db;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    max-width: 400px;
+}
+
+.card-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+    }
+
+.card-container #quoteDisplay {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+    }
+
+button.newQuote {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #53c453;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;        
+    transition: background-color 0.3s ease;
+    margin: 60px 100px;
+    }
+
+
+.card-container button:hover {
+        background-color: #8cce8b;
+    }
+
+input#newQuoteText {
+        padding: 10px;
+        font-size: 16px;
+        width: calc(100% - 22px);
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    input#newQuoteCategory {
+        padding: 10px;
+        font-size: 16px;
+        width: calc(100% - 22px);
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    input#addQuote {
+        padding: 10px 15px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 10px;
+    }
+
+    input#addQuote:hover {
+        background-color: #45a049;
+    }
+
+#addQuote {
+    padding: 10px 15px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 10px;
+}
+
+#addQuote:hover {
+    background-color:  #45a049;
+}
+    
