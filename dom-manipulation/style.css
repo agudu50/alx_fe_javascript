@@ -1,12 +1,12 @@
  
 body {
-    font-family: Arial, sans-serif;
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;   
+   font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #8ec5fc, #e0c3fc);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; 
  }
 
 
@@ -14,9 +14,9 @@ body {
  
  
 .card-container {
-    background-color: #c8a8db;
+    background-color: #6ac1a5ad;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(15, 15, 15, 0.1);
     padding: 20px;
     margin: 10px;
     max-width: 400px;
@@ -25,7 +25,7 @@ body {
 .card-container h1 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: white;
+    color: rgb(19, 9, 9);
     text-align: center;
     }
 
@@ -49,7 +49,7 @@ button.newQuote {
 
 
 .card-container button:hover {
-        background-color: #8cce8b;
+        background-color:  #68cb66;
     }
 
 input#newQuoteText {
@@ -70,26 +70,12 @@ input#newQuoteText {
         border-radius: 5px;
     }
 
-    input#addQuote {
-        padding: 10px 15px;
-        font-size: 16px;
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        margin-top: 10px;
-    }
-
-    input#addQuote:hover {
-        background-color: #45a049;
-    }
+ 
 
 #addQuote {
     padding: 10px 15px;
         font-size: 16px;
-        background-color: #4CAF50;
+        background-color: #53c453;
         color: white;
         border: none;
         border-radius: 5px;
@@ -99,6 +85,19 @@ input#newQuoteText {
 }
 
 #addQuote:hover {
-    background-color:  #45a049;
+    background-color:   #68cb66;
 }
-    
+
+
+.filter-section {
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.filter-section label {
+    font-size: 16px;
+    margin-right: 10px;
+    color: white;
+}
+
