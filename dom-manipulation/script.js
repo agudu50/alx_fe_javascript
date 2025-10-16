@@ -3,11 +3,11 @@ let quotes = [
   { text: "The only limit to our realization of tomorrow is our doubts of today.", category: "Motivation" },
   { text: "In the middle of difficulty lies opportunity.", category: "Inspiration" },
   { text: "Success is not final; failure is not fatal: It is the courage to continue that counts.", category: "Success" },
-  {text: "Life is 10% what happens to us and 90% how we react to it.", category: "Life" },
-  {text: "The best way to predict the future is to create it.", category: "Future" },
+  { text: "Life is 10% what happens to us and 90% how we react to it.", category: "Life" },
+  { text: "The best way to predict the future is to create it.", category: "Future" },
   { text: "Do not watch the clock. Do what it does. Keep going.", category: "Time" },
-  {text: "Believe you can and you're halfway there.", category: "Belief" },
-  {text: "Act as if what you do makes a difference. It does.", category: "Action" },
+  { text: "Believe you can and you're halfway there.", category: "Belief" },
+  { text: "Act as if what you do makes a difference. It does.", category: "Action" },
   { text: "What you get by achieving your goals is not as important as what you become by achieving your goals.", category: "Goals" },
   { text: "The harder the conflict, the greater the triumph.", category: "Triumph" },
   { text: "Happiness is not something ready made. It comes from your own actions.", category: "Happiness" },
@@ -22,7 +22,7 @@ const addQuoteButton = document.getElementById("addQuote");
 
 // Populate category dropdown
 function updateCategoryDropdown() {
-  const categories = [...new Set(quotes.map(q => q.category))]; // Unique categories
+  const categories = [...new Set(quotes.map(q => q.category))];
   categorySelect.innerHTML = `<option value="all">All Categories</option>`;
   categories.forEach(cat => {
     const option = document.createElement("option");
@@ -32,7 +32,7 @@ function updateCategoryDropdown() {
   });
 }
 
-// Show a random quote
+// Show random quote
 function showRandomQuote() {
   const selectedCategory = categorySelect.value;
   let filteredQuotes = quotes;

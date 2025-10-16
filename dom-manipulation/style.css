@@ -47,6 +47,8 @@ button.newQuote {
     margin: 60px 100px;
     }
 
+    
+
 
 .card-container button:hover {
         background-color:  #68cb66;
@@ -100,4 +102,21 @@ input#newQuoteText {
     margin-right: 10px;
     color: white;
 }
+
+.btn{
+        margin-top: 20px;
+        
+        padding: 10px 15px;
+        font-size: 16px;
+        background-color: #53c453;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-left: 10px;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+    }
 
