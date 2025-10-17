@@ -92,7 +92,7 @@ function setSyncStatus(text, klass = "") {
   syncStatusEl.className = klass;
 }
 
-async function fetchServerQuotes() {
+async function fetchQuotesFromServer() {
   const res = await fetch(SERVER_ENDPOINT);
   if (!res.ok) throw new Error(`Fetch error ${res.status}`);
   return await res.json(); // expected array of server quotes
@@ -214,7 +214,7 @@ async function syncWithServer(showNotifications = true) {
   }
 
   try {
-    const serverQuotes = await fetchServerQuotes();
+    const serverQuotes = await fetchQuotesFromServer();
     // merge server into local, collect any conflicts
     const conflicts = mergeServerIntoLocal(serverQuotes || []);
     // After merge, attempt to push again for any remaining pending (e.g., created locally)
