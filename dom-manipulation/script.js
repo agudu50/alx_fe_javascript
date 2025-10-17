@@ -221,10 +221,17 @@ async function syncWithServer(showNotifications = true) {
     await pushLocalChanges();
 
     setSyncStatus("Synced", "synced");
-    if (conflicts.length > 0) {
-      showConflictBanner(conflicts);
-      if (showNotifications) alert(`${conflicts.length} conflict(s) resolved (server wins). You may restore local versions from the conflict list.`);
-    }
+
+// ✅ Add this success message
+console.log("Quotes synced with server!");
+if (showNotifications) alert("Quotes synced with server!");
+
+if (conflicts.length > 0) {
+  showConflictBanner(conflicts);
+  if (showNotifications)
+    alert(`${conflicts.length} conflict(s) resolved (server wins). You may restore local versions from the conflict list.`);
+}
+
   } catch (err) {
     console.warn("Sync failed", err);
     setSyncStatus("Sync error", "error");

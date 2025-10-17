@@ -1,54 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dynamic Quote Generator</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body >
+<body>
   <div class="card-container">
     <div class="quote-card">
       <h1>Dynamic Quote Generator</h1>
 
       <div id="quoteDisplay" class="quote-display"></div>
 
-      <div class="filter-section">
-          <label for="categoryFilter">Filter by Category:</label>
-          <select id="categoryFilter" onchange="filterQuotes()">
-            <option value="all">All Categories</option>
-            <!-- categories will be populated dynamically -->
-          </select>
-        </div>
+      <div id="syncStatus" class="status"></div>
+      <button id="syncNow" class="btn">Sync Now</button>
 
-
-        <!-- Sync controls + indicator -->
-      <div class="sync-controls">
-        <button id="syncQuotes" class="btn-sync">Sync Now</button>
-        <span id="syncStatus"></span>
-      </div>
-
-      <!-- Conflict banner (hidden by default) -->
-      <div id="conflictBanner" class="conflict-banner" style="display:none;">
-        <p>Conflicts detected and resolved (server wins). <span id="conflictCount"></span></p>
+      <div id="conflictBanner" style="display:none;">
+        <h3>Conflicts Detected</h3>
+        <p id="conflictCount"></p>
         <div id="conflictList"></div>
       </div>
-
-
-
-      <button class="btn" id="newQuote">Show New Quote</button>
-
-      <div class="add-quote-card">
-        <!-- <button class="btn add-btn" id="addQuote" onclick="addQuote()">Add Quote</button> -->
-      </div>
-
-      <div class="btn-export">
-      <div class="import-export">
-        <button id="exportJson" class="btn-export-json">Export Quotes (JSON)</button>
-        <input type="file" id="importFile" accept=".json,application/json" />
-      </div>
-      </div>
-
     </div>
   </div>
 
