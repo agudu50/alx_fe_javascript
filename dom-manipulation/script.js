@@ -58,8 +58,8 @@ function populateCategories() {
 
 // ----- Show quotes filtered by selected category -----
 function filterQuotes() {
-  const selectedCat = categoryFilter.value;
-  localStorage.setItem(LS_KEY_LAST_CATEGORY, selectedCat); // remember filter
+  const selectedCategory = categoryFilter.value;
+  localStorage.setItem(LS_KEY_LAST_CATEGORY, selectedCategory); // remember filter
 
   let filtered = quotes;
   if (selectedCategory !== "all") {
