@@ -14,9 +14,13 @@
       <div id="quoteDisplay" class="quote-display"></div>
 
       <div class="filter-section">
-        <label for="categorySelect">Filter by Category:</label>
-        <select id="categorySelect"></select>
-      </div>
+          <label for="categoryFilter">Filter by Category:</label>
+          <select id="categoryFilter" onchange="filterQuotes()">
+            <option value="all">All Categories</option>
+            <!-- categories will be populated dynamically -->
+          </select>
+        </div>
+
 
       <button class="btn" id="newQuote">Show New Quote</button>
 
