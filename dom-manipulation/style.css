@@ -121,27 +121,10 @@ input#newQuoteText {
 
     
 
-    /* .btn-export-quotes {
-        margin-right: 50px;
-        width: 80%;
-        height: 35px;
-        padding: 5px 10px;
-        font-size: 16px;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        margin-left: 10px;
-        justify-content: center;
-        text-align: center;
-       
-      
-    } */
 
     .btn-export-json {
         background-color: #53c453;
-        ;
+        
     }
     .btn-export-json:hover {
         background-color:  #c0e4c0;
@@ -149,10 +132,61 @@ input#newQuoteText {
 
 .import-export {
   display: flex;
-  align-items: center; /* vertically center items */
-  gap: 30px; /* spacing between button and input */
+  align-items: center; 
+  gap: 30px; 
   margin-top: 20px;
   cursor: pointer;
  
+}
+
+
+.sync-controls { 
+    margin-top: 12px; 
+    display:flex; 
+    gap:10px; 
+    align-items:center; }
+
+
+#syncStatus { 
+    font-weight:600; 
+    color:#ffffff; 
+    background:rgba(0,0,0,0.2); 
+    padding:4px 8px; 
+    border-radius:6px;
+    margin: 5px;
+ }
+
+ .btn-sync {
+    padding: 8px 12px; 
+    border-radius:6px; 
+    cursor:pointer; 
+    background-color: #53c453;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+ }  
+
+.conflict-banner { 
+    margin-top:12px; 
+    padding:10px; 
+    background: #ffefef; 
+    border: 1px solid #ffa5a5; 
+    color:#700; 
+    border-radius:8px; 
+}
+.conflict-item { 
+    margin:6px 0; 
+    padding:6px; 
+    background:#fff; 
+    border-radius:6px; 
+    display:flex; 
+    justify-content:space-between; 
+    gap:10px; }
+
+
+.conflict-item button { 
+    padding:6px 8px; 
+    border-radius:6px; 
+    cursor:pointer; 
 }
 

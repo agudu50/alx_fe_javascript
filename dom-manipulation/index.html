@@ -22,6 +22,20 @@
         </div>
 
 
+        <!-- Sync controls + indicator -->
+      <div class="sync-controls">
+        <button id="syncNow" class="btn-sync">Sync Now</button>
+        <span id="syncStatus"></span>
+      </div>
+
+      <!-- Conflict banner (hidden by default) -->
+      <div id="conflictBanner" class="conflict-banner" style="display:none;">
+        <p>Conflicts detected and resolved (server wins). <span id="conflictCount"></span></p>
+        <div id="conflictList"></div>
+      </div>
+
+
+
       <button class="btn" id="newQuote">Show New Quote</button>
 
       <div class="add-quote-card">
