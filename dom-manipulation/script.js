@@ -93,7 +93,7 @@ function setSyncStatus(text, klass = "") {
 }
 
 async function fetchQuotesFromServer() {
-  const res = await fetch(SERVER_ENDPOINT);
+  const res = await fetch("http://localhost:3000/posts");
   if (!res.ok) throw new Error(`Fetch error ${res.status}`);
   return await res.json(); // expected array of server quotes
 }

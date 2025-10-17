@@ -1,16 +1,6 @@
 {
-  "quotes": [
-    {
-      "id": 1,
-      "text": "The only limit to our realization of tomorrow is our doubts of today.",
-      "category": "Motivation",
-      "updatedAt": "2025-10-17T12:00:00.000Z"
-    },
-    {
-      "id": 2,
-      "text": "In the middle of difficulty lies opportunity.",
-      "category": "Inspiration",
-      "updatedAt": "2025-10-17T12:30:00.000Z"
-    }
+  "posts": [
+    { "id": 1, "title": "Hello World", "body": "This is my first post." },
+    { "id": 2, "title": "Learning JSON Server", "body": "It’s actually super easy!" }
   ]
 }
