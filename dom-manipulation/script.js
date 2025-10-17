@@ -7,7 +7,7 @@
 */
 
 // ---------- Config ----------
-const SERVER_BASE = "http://localhost:3000"; // change to your mock server URL
+const SERVER_BASE = "https://jsonplaceholder.typicode.com/posts"; // change to your mock server URL
 const SERVER_ENDPOINT = `${SERVER_BASE}/quotes`;
 const LS_KEY = "dqg_quotes_sync_v1";
 const SYNC_INTERVAL_MS = 30000; // 30s polling
