@@ -13,6 +13,7 @@ let quotes = [
   { text: "Success is not final; failure is not fatal: It is the courage to continue that counts.", category: "Success" },
   { text: "Life is 10% what happens to us and 90% how we react to it.", category: "Life" },
   
+
 ];
 
 // ----- DOM Elements -----
@@ -61,8 +62,8 @@ function filterQuotes() {
   localStorage.setItem(LS_KEY_LAST_CATEGORY, selectedCat); // remember filter
 
   let filtered = quotes;
-  if (selectedCat !== "all") {
-    filtered = quotes.filter(q => q.category === selectedCat);
+  if (selectedCategory !== "all") {
+    filtered = quotes.filter(q => q.category === selectedCategory);
   }
 
   if (filtered.length === 0) {
