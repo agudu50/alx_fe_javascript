@@ -1,6 +1,5 @@
 {
-  "posts": [
-    { "id": 1, "title": "Hello JSON Server", "author": "Anthony" },
-    { "id": 2, "title": "Learning DOM Manipulation", "author": "Gudu" }
+  "quotes": [
+    { "id": 1, "text": "Success is not final; failure is not fatal.", "category": "Motivation", "updatedAt": "2025-10-17T00:00:00Z" }
   ]
 }
