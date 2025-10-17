@@ -20,7 +20,7 @@ let syncTimer = null;
 // ---------- DOM ----------
 const quoteDisplay = document.getElementById("quoteDisplay");
 const syncStatusEl = document.getElementById("syncStatus");
-const syncNowBtn = document.getElementById("syncNow");
+const syncNowBtn = document.getElementById("syncQuotes");
 const conflictBanner = document.getElementById("conflictBanner");
 const conflictCountEl = document.getElementById("conflictCount");
 const conflictListEl = document.getElementById("conflictList");
