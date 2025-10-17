@@ -93,7 +93,7 @@ function setSyncStatus(text, klass = "") {
 }
 
 async function fetchQuotesFromServer() {
-  const res = await fetch("http://localhost:3000/posts");
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
   if (!res.ok) throw new Error(`Fetch error ${res.status}`);
   return await res.json(); // expected array of server quotes
 }
@@ -108,7 +108,7 @@ async function pushLocalChanges() {
       if (change.op === "create") {
         // POST to server - server assigns canonical id
         const payload = { text: change.quote.text, category: change.quote.category, updatedAt: change.quote.updatedAt };
-        const res = await fetch(SERVER_ENDPOINT, {
+        const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(payload)
@@ -124,7 +124,7 @@ async function pushLocalChanges() {
         if (!serverId) {
           // nothing to update on server yet; create it (fallback)
           const payload = { text: change.quote.text, category: change.quote.category, updatedAt: change.quote.updatedAt };
-          const res = await fetch(SERVER_ENDPOINT, {
+          const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(payload)
@@ -134,7 +134,7 @@ async function pushLocalChanges() {
           quotes = quotes.map(q => q.id === change.quote.id ? { ...created } : q);
           succeeded.push(change);
         } else {
-          const res = await fetch(`${SERVER_ENDPOINT}/${serverId}`, {
+          const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${serverId}`, {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(change.quote)
