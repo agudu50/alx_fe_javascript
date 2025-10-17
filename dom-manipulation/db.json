@@ -1,6 +1,6 @@
 {
   "posts": [
-    { "id": 1, "title": "Hello World", "body": "This is my first post." },
-    { "id": 2, "title": "Learning JSON Server", "body": "It’s actually super easy!" }
+    { "id": 1, "title": "Hello JSON Server", "author": "Anthony" },
+    { "id": 2, "title": "Learning DOM Manipulation", "author": "Gudu" }
   ]
 }
